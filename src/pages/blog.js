@@ -11,6 +11,8 @@ class BlogIndex extends React.Component {
   render() {
     const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
 
+    console.log('moi')
+
     return (
       <Layout location={this.props.location}>
         <Seo title="Blog" />

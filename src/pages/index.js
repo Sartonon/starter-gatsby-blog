@@ -11,6 +11,8 @@ class RootIndex extends React.Component {
     const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
     const [author] = get(this, 'props.data.allContentfulPerson.nodes')
 
+    console.log(author.heroImage)
+
     return (
       <Layout location={this.props.location}>
         <Hero
